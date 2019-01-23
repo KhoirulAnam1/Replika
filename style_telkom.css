@@ -1,0 +1,710 @@
+div.menu{
+    width: 100%;
+    background: #d4251c;
+}
+
+div.menu ul{
+    list-style-type: none; /* menghilangkan bulat bulat pada link */
+    overflow: hidden; /* menghilangkan scroll bar */
+    padding: 0; /* jarak antara border dengan konten (jarak dalam) */
+    margin: 0; /* jarak antara tiap elemen (jarak luar) */
+}
+
+div.menu li{
+    float: right; /* posisi element dari kanan */
+}
+
+div.menu li a{
+    text-decoration: none; /* untuk menghilangkan garis bawah pada link */
+    color: white; /* warna font pada link */
+    text-align: center; /* rata tengah teks */
+    padding: 18px 20px; /* 18 itu untuk Top dan Bottom nya dan 20 untuk right dan left (jarak) */
+    font-size: 20px;
+    display: block; /* menampilkan elemen */
+}
+
+div.menu li a:hover{ /* mouseover -> ketika mouse merabah elemen */
+    background: white;
+    color: black;
+    border: 1px solid black;
+    /* 1 px itu tebalnya, solid itu tipe garis, red itu warna border*/
+}
+
+div.menu img{
+    width: 200px;
+    height: auto;
+    margin-right: 15px; /* jarak antara tiap elemen (jarak luar) */
+    margin-left: 15px;
+}
+
+div.header{
+    width: 100%;
+    height: 720px;
+    background-image: url("hero.JPG");
+    background-repeat: no-repeat; /* ini biar gambarnya tidak berulang */
+    background-size: cover; /* ini untuk mengatur ukuran background */
+    /* cover digunakan untuk me - fill - kan gambar */
+    background-position: center;
+    float: left;
+}
+
+div.bayangan{
+    width: 100%;
+    height: 720px;
+    background: #000;
+    opacity: 0.7;
+    float: left;
+}
+
+div.header h1{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 200px; /* Mengatur jarak dari atas */
+    left: 450px; /* mengatur jarak dari kiri */
+    font-weight: bolder;
+    font-family: "Bookman Old";
+    font-size: 50px;
+}
+
+div.header h6{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 380px;
+    left: 600px;
+    font-weight: bolder;
+    font-family: "Bookman Old";
+    font-size: 25px;
+}
+
+div.header h1 img{
+    width: 120px;
+    height: auto;
+}
+
+div.about{
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    margin-top: 50px;
+    float: left;
+}
+
+div.about .left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+div.about .left h1{
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 50px;
+    font-family: sans-serif; 
+    font-weight: 20;
+    border-right: 5px solid red;
+    padding-right: 10px;
+}
+
+div.about .left p{
+    text-align: right;
+    font-size: 20px;
+    color: grey;
+}
+
+div.about .right{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+div.about .right img{
+    width: 500px;
+    height: 310px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border: 5px solid #000;
+    border-radius: 10px;
+}
+
+div.layanan{
+    width: 100%;
+    height: 400px;
+    float: left;
+}
+
+div.layanan .Box{
+    width: 20%;
+    height: 100%;
+    float: left;
+    margin: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+div.layanan .Box .Bunder{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 100px;
+    display: flex;
+}
+
+.bg-red{background: red;}
+.bg-navy{background: navy;}
+.bg-green{background: green;}
+.bg-grey{background: grey;}
+
+div.layanan .Box .Bunder span{
+    font-size: 50px;
+    color: white;
+    margin: auto;
+}
+
+div.layanan .Box .deskripsi{
+    margin-top: 10px;
+    text-align: center;
+    color: grey;
+    font-size: 20px;
+}
+
+div.layanan .Box .Bunder h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Montserrat';
+}
+
+.text-red{color: #d4251c}
+.text-navy{color: navy}
+.text-green{color: green}
+.text-grey{color: grey}
+.text-white{color: white}
+
+div.penghargaan{
+    width: 100%;
+    height: 600px;
+    background: url("parallax1.jpg") no-repeat top;
+    background-size: cover;
+    float: left;
+    position: relative;
+}
+
+div.penghargaan .gelap{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000, #000, transparent);
+    float: left;
+    opacity: 0.7;
+}
+
+div.penghargaan .left{
+    width: 50%;
+    text-align: right;
+    margin-top: 240px;
+    position: absolute;
+    padding-right: 40px;
+    border-right: 5px solid red;
+}
+
+div.penghargaan .left h1{
+    margin: 2px;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+div.penghargaan .left h2{
+    margin: 2px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+div.penghargaan .left h3{
+    margin: 2px;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+div.penghargaan .right{
+    width: 50%;
+    height: auto;
+    float: right;
+    position: absolute;
+    text-align: left;
+    margin-top: 240px;
+    left: 840px;
+}
+
+div.penghargaan .right img{
+    width: 140px;
+    height: auto;
+}
+
+div.study{
+    width: 100%;
+    height: 200px;
+    float: left;
+    position: flex;
+    margin-top: 150px;
+}
+
+div.study .bunder{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+}
+
+div.study .bunder span{
+    font-size: 50px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.study h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.study p{
+    color: grey;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.prodi{
+    width: 100%;
+    height: auto;
+    float: left;
+    background: linear-gradient(white 300px, #d4251c 250px);
+    margin-top: 50px;
+}
+
+div.prodi img{
+    margin-left: 110px;
+}
+
+div.prodi .jurusan{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+div.prodi .jurusan h3{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+div.prodi .jurusan p{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+div.prestasi{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(white 400px, #d4251c 100px);
+    float: left;
+    margin-top: 100px;
+}
+
+div.prestasi .left{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+div.prestasi .left h1{
+    color: black;
+    font-size: 46.2px;
+    border-left: 5px solid #d4251c;
+    text-transform: uppercase;
+    margin-left: 200px;
+    padding-left: 40px;
+}
+
+div.prestasi .left p{
+    color: grey;
+    font-size: 20px;
+    margin-left: 200px;
+}
+
+div.prestasi .right{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+div.prestasi .right img{
+    width: 474px;
+    height: 355.5px;
+    border: 50px solid whitesmoke;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+div.prestasi .footer{
+    position: relative;
+    left: 30px;
+    bottom: 45px;
+    margin-left: 200px;
+}
+
+div.prestasi .footer h3{
+    color: #fff;
+    font-size: 23.8px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.info{
+    width: 100%;
+    height: 300px;
+    float: left;
+    margin-top: 100px;
+}
+
+div.info .bunder{
+    width: 100px;
+    height: 100px;
+    background: #d4251c;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+}
+
+div.info .bunder span{
+    margin: auto;
+    font-size: 60px;
+    color: #fff;
+}
+
+div.info h1{
+    font-size: 40px;
+    color: black;
+    font-family: sans-serif;
+    margin: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.info p{
+    font-size: 18px;
+    color: grey;
+    font-family: sans-serif;
+    text-align: center;
+    opacity: 0.5;
+}
+
+div.update{
+    width: 100%;
+    height: 220px;
+    float: left;
+    background: #d4251c;
+    position: relative;
+}
+
+div.update .centang{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #d4251c;
+    display: flex;
+    position: absolute;
+    left: 200px;
+    top: -50px;
+}
+
+div.update .centang span{
+    margin: auto;
+    font-size: 60px;
+    color: white;
+}
+
+div.update .left{
+    width: 60%;
+    height: auto;
+    float: left;
+}
+
+div.update .left h1{
+    font-size: 35px;
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+div.update .left p{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    opacity: 0.7;
+    margin-left: 200px;
+}
+
+div.update .right{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-top: 60px;
+}
+
+div.update .right .bunder{
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    margin: 20px;
+    display: flex;
+    float: left;
+}
+
+div.update .right .bunder span{
+    font-size: 50px;
+    margin: auto;
+    color: #d4251c;
+}
+
+div.agenda{
+    width: 100%;
+    height: 400px;
+    float: left;
+    margin-top: 150px;
+}
+
+div.agenda .bunder{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #d4251c;
+    display: flex;
+    margin: 0 auto;
+}
+
+div.agenda .bunder span{
+    font-size: 60px;
+    margin: auto;
+    color: white;
+}
+
+div.agenda h1{
+    font-size: 50px;
+    color: black;
+    font-family: sans-serif;
+    margin: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.agenda p{
+    font-size: 20px;
+    color: grey;
+    font-family: sans-serif;
+    text-align: center;
+    opacity: 0.5;
+}
+
+div.testimoni{
+    width: 100%;
+    height: 600px;
+    background: url(parallax2.jpg);
+    background-size: cover;
+    float: left;
+    position: relative;
+}
+
+div.testimoni .bayangan{
+    width: 100%;
+    height: 600px;
+    background: #000;
+    float: left;
+    opacity: 0.5;
+}
+
+div.testimoni h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+
+div.testimoni h2{
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+div.partner{
+    width: 100%;
+    height: 300px;
+    float: left;
+    margin-top: 50px;
+}
+
+div.partner .bunder{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #d4251c;
+    display: flex;
+    margin: 0 auto;
+}
+
+div.partner .bunder span{
+    font-size: 60px;
+    margin: auto;
+    color: white;
+}
+
+div.partner h1{
+    font-size: 50px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.partner p{
+    font-size: 20px;
+    color: grey;
+    font-family: sans-serif;
+    text-align: center;
+    opacity: 0.5;
+    margin: 20px;
+} 
+
+div.logo{
+    width: 100%;
+    height: 150px;
+}
+
+div.logo .right{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+div.logo .right img{
+    width: 130px;
+    height: 70px;
+    font-size: 14px;
+    margin: 50px;
+}
+
+div.bawah{
+    width: 100%;
+    height: auto;
+    background: black;
+    float: left;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 350px;
+    opacity: 0.9;
+}
+
+div.bawah .satu{
+    width: 23%;
+    height: auto;
+    padding: 10px;
+    color: grey;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 170px;
+}
+
+div.bawah .satu p{
+    margin-top: 20px;
+}
+
+div.bawah .satu h3{
+    margin-top: 40px;
+    color: white;
+}
+
+div.bawah .satu .fab{
+    margin: 10px;
+    font-size: 18px;
+}
+
+div.bawah .dua{
+    width: 17%;
+    height: auto;
+    color: white;
+    float: left;
+}
+
+div.bawah .tiga{
+    width: 20%;
+    height: auto;
+    color: grey;
+    float: left;
+}
+
+div.bawah .tiga h4{
+    color: white;
+}
+
+div.bawah .tiga .fa{
+    font-size: 17px;
+    margin: 5px;
+    color: white;
+}
+
+div.bawah .tiga h3{
+    font-size: 15px;
+}
+
+div.bawah .empat{
+    width: 20%;
+    float: left;
+    height: auto;
+    color: white;
+}
+
+div.copy{
+    width: 100%;
+    height: 50px;
+    background: black;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+div.copy .left{
+    position: absolute;
+    width: 50%;
+    color: grey;
+    font-size: 12px;
+    float: left;
+    left: 180px;;
+}
+
+div.copy .right{
+    position: absolute;
+    width: 50%;
+    color: grey;
+    font-size: 11px;
+    float: left;
+    text-align: right;
+    left: 590px;
+}
+
+
+
+
